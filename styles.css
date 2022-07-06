@@ -9,8 +9,8 @@ body {
   background-color: var(--bg);
 }
 
-svg:not(:root){
-    overflow: hidden;
+svg:not(:root) {
+  overflow: hidden;
 }
 :root {
   --font1: #ffffff;
@@ -50,17 +50,36 @@ header nav .nav-right-section li:nth-child(2) {
   padding-right: 15px;
 }
 
-.navbar-svg{
-    color: rgba(255,255,255,0.87);
-    fill: currentColor;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    vertical-align: middle;
+header nav .nav-right-section li:nth-child(1):hover,
+header nav .nav-right-section li:nth-child(2):hover {
+  text-decoration: underline;
 }
 
-.navbar-photo{
-    padding: 4px;
-    vertical-align: middle;
-    border-radius: 50%;
+.navbar-svg {
+  color: rgba(255, 255, 255, 0.87);
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.li-svg {
+  padding: 4px;
+}
+
+.navbar-photo {
+  padding: 4px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.li-photo {
+  padding: 4px;
+}
+
+.navbar-photo:hover,
+.navbar-svg:hover {
+  border-radius: 50%;
+  background-color: #bdc1c618;
 }
